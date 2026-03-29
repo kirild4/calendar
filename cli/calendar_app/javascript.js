@@ -23,14 +23,22 @@ Cal.prototype.translations = {
     back: 'Back',
     next: 'Next',
     settings: 'Settings',
+    mode: 'Mode',
+    dayMode: 'Day',
+    nightMode: 'Night',
     themes: 'Themes',
     weekStart: 'Start of Week',
     language: 'Language',
-    standard: 'Standard',
-    green: 'Green',
-    red: 'Red',
-    blue: 'Blue',
-    softpink: 'Soft Pink',
+    themeStandard: 'Aurora Violet',
+    themeForest: 'Forest Dew',
+    themeCherry: 'Cherry Ember',
+    themeOcean: 'Coastal Azure',
+    themeSakura: 'Sakura Blush',
+    themeHoney: 'Honey Sunrise',
+    themeCustom: 'Your Palette',
+    customPaletteHint: 'Bright presets — tap one or fine-tune below.',
+    customPickExact: 'Exact color',
+    pickCustomColor: 'Custom color',
     eu: 'EU',
     usa: 'USA',
     english: 'English',
@@ -51,20 +59,41 @@ Cal.prototype.translations = {
     untitled: 'Untitled',
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     daysEU: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
-    daysUSA: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+    daysUSA: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    viewRange: 'View',
+    view1Day: '1 day',
+    view3Days: '3 days',
+    view7Days: '7 days',
+    view1Month: '1 month',
+    ariaNavMonthPrev: 'Previous month',
+    ariaNavMonthNext: 'Next month',
+    ariaNavDayPrev: 'Previous day',
+    ariaNavDayNext: 'Next day',
+    ariaNavWeekPrev: 'Previous week',
+    ariaNavWeekNext: 'Next week',
+    ariaNavRangePrev: 'Previous days',
+    ariaNavRangeNext: 'Next days'
   },
   ru: {
     back: 'Назад',
     next: 'Далее',
     settings: 'Настройки',
+    mode: 'Режим',
+    dayMode: 'Дневной',
+    nightMode: 'Ночной',
     themes: 'Темы',
     weekStart: 'Начало недели',
     language: 'Язык',
-    standard: 'Стандартный',
-    green: 'Зелёный',
-    red: 'Красный',
-    blue: 'Синий',
-    softpink: 'Нежно-розовый',
+    themeStandard: 'Лиловый рассвет',
+    themeForest: 'Роса в лесу',
+    themeCherry: 'Вишнёвый закат',
+    themeOcean: 'Морская лазурь',
+    themeSakura: 'Цвет сакуры',
+    themeHoney: 'Медовый рассвет',
+    themeCustom: 'Свой цвет',
+    customPaletteHint: 'Яркие пресеты — нажмите или выберите ниже.',
+    customPickExact: 'Точный цвет',
+    pickCustomColor: 'Свой цвет',
     eu: 'EU',
     usa: 'USA',
     english: 'Английский',
@@ -85,20 +114,41 @@ Cal.prototype.translations = {
     untitled: 'Без названия',
     months: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
     daysEU: ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
-    daysUSA: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб']
+    daysUSA: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    viewRange: 'Показ',
+    view1Day: '1 день',
+    view3Days: '3 дня',
+    view7Days: '7 дней',
+    view1Month: '1 месяц',
+    ariaNavMonthPrev: 'Предыдущий месяц',
+    ariaNavMonthNext: 'Следующий месяц',
+    ariaNavDayPrev: 'Предыдущий день',
+    ariaNavDayNext: 'Следующий день',
+    ariaNavWeekPrev: 'Предыдущая неделя',
+    ariaNavWeekNext: 'Следующая неделя',
+    ariaNavRangePrev: 'Предыдущие дни',
+    ariaNavRangeNext: 'Следующие дни'
   },
   de: {
     back: 'Zurück',
     next: 'Weiter',
     settings: 'Einstellungen',
+    mode: 'Modus',
+    dayMode: 'Tag',
+    nightMode: 'Nacht',
     themes: 'Themen',
     weekStart: 'Wochenbeginn',
     language: 'Sprache',
-    standard: 'Standard',
-    green: 'Grün',
-    red: 'Rot',
-    blue: 'Blau',
-    softpink: 'Zartrosa',
+    themeStandard: 'Morgenviolett',
+    themeForest: 'Waldduft',
+    themeCherry: 'Kirschglut',
+    themeOcean: 'Meeresblau',
+    themeSakura: 'Kirschblüte',
+    themeHoney: 'Honiggold',
+    themeCustom: 'Eigene Farbe',
+    customPaletteHint: 'Leuchtende Farben — antippen oder unten wählen.',
+    customPickExact: 'Genau wählen',
+    pickCustomColor: 'Eigene Farbe',
     eu: 'EU',
     usa: 'USA',
     english: 'Englisch',
@@ -119,20 +169,41 @@ Cal.prototype.translations = {
     untitled: 'Ohne Titel',
     months: ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
     daysEU: ['Mo','Di','Mi','Do','Fr','Sa','So'],
-    daysUSA: ['So','Mo','Di','Mi','Do','Fr','Sa']
+    daysUSA: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+    viewRange: 'Ansicht',
+    view1Day: '1 Tag',
+    view3Days: '3 Tage',
+    view7Days: '7 Tage',
+    view1Month: '1 Monat',
+    ariaNavMonthPrev: 'Vorheriger Monat',
+    ariaNavMonthNext: 'Nächster Monat',
+    ariaNavDayPrev: 'Vorheriger Tag',
+    ariaNavDayNext: 'Nächster Tag',
+    ariaNavWeekPrev: 'Vorherige Woche',
+    ariaNavWeekNext: 'Nächste Woche',
+    ariaNavRangePrev: 'Vorherige Tage',
+    ariaNavRangeNext: 'Nächste Tage'
   },
   fr: {
     back: 'Retour',
     next: 'Suivant',
     settings: 'Paramètres',
+    mode: 'Mode',
+    dayMode: 'Jour',
+    nightMode: 'Nuit',
     themes: 'Thèmes',
     weekStart: 'Début de semaine',
     language: 'Langue',
-    standard: 'Standard',
-    green: 'Vert',
-    red: 'Rouge',
-    blue: 'Bleu',
-    softpink: 'Rose tendre',
+    themeStandard: 'Aube violette',
+    themeForest: 'Rosée des bois',
+    themeCherry: 'Braise cerise',
+    themeOcean: 'Azur côtier',
+    themeSakura: 'Pétale de sakura',
+    themeHoney: 'Miel doré',
+    themeCustom: 'Ta palette',
+    customPaletteHint: 'Couleurs vives — touchez ou affinez ci-dessous.',
+    customPickExact: 'Couleur exacte',
+    pickCustomColor: 'Couleur perso',
     eu: 'EU',
     usa: 'USA',
     english: 'Anglais',
@@ -153,16 +224,152 @@ Cal.prototype.translations = {
     untitled: 'Sans titre',
     months: ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
     daysEU: ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'],
-    daysUSA: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam']
+    daysUSA: ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],
+    viewRange: 'Affichage',
+    view1Day: '1 jour',
+    view3Days: '3 jours',
+    view7Days: '7 jours',
+    view1Month: '1 mois',
+    ariaNavMonthPrev: 'Mois précédent',
+    ariaNavMonthNext: 'Mois suivant',
+    ariaNavDayPrev: 'Jour précédent',
+    ariaNavDayNext: 'Jour suivant',
+    ariaNavWeekPrev: 'Semaine précédente',
+    ariaNavWeekNext: 'Semaine suivante',
+    ariaNavRangePrev: 'Jours précédents',
+    ariaNavRangeNext: 'Jours suivants'
   }
 };
 
 Cal.prototype.defaultSettings = function() {
   return {
     theme: 'standard',
+    customColor: '#7c3aed',
+    mode: 'light',
     weekStart: 'EU',
-    language: 'en'
+    language: 'en',
+    viewSpan: 'month',
+    rangeAnchor: null
   };
+};
+
+Cal.prototype.CUSTOM_THEME_CSS_VARS = [
+  '--bg-start', '--bg-end', '--surface', '--surface-soft', '--heading', '--accent',
+  '--accent-soft', '--accent-soft-2', '--accent-hover', '--accent-strong', '--outline',
+  '--today-start', '--today-end', '--selected-bg', '--selected-shadow', '--input-border', '--muted-cell'
+];
+
+Cal.prototype.BRIGHT_CUSTOM_SWATCHES = [
+  '#ef4444', '#f97316', '#f59e0b', '#eab308', '#84cc16', '#22c55e', '#14b8a6',
+  '#06b6d4', '#0ea5e9', '#3b82f6', '#6366f1', '#8b5cf6', '#a855f7', '#d946ef',
+  '#ec4899', '#f43f5e'
+];
+
+Cal.prototype.hexToRgb = function(hex) {
+  var h = String(hex || '').replace('#', '').trim();
+  if (h.length === 3) {
+    h = h.split('').map(function(c) { return c + c; }).join('');
+  }
+  if (h.length !== 6 || /[^0-9a-f]/i.test(h)) {
+    return { r: 124, g: 58, b: 237 };
+  }
+  var n = parseInt(h, 16);
+  return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+};
+
+Cal.prototype.rgbToHex = function(r, g, b) {
+  return '#' + [r, g, b].map(function(x) {
+    var v = Math.max(0, Math.min(255, Math.round(x)));
+    return v.toString(16).padStart(2, '0');
+  }).join('');
+};
+
+Cal.prototype.blendHex = function(hexA, hexB, t) {
+  var a = this.hexToRgb(hexA);
+  var b = this.hexToRgb(hexB);
+  return this.rgbToHex(
+    a.r + (b.r - a.r) * t,
+    a.g + (b.g - a.g) * t,
+    a.b + (b.b - a.b) * t
+  );
+};
+
+Cal.prototype.rgbaFromHex = function(hex, alpha) {
+  var o = this.hexToRgb(hex);
+  return 'rgba(' + o.r + ',' + o.g + ',' + o.b + ',' + alpha + ')';
+};
+
+Cal.prototype.normalizeCustomHex = function(hex) {
+  var h = String(hex || '').trim();
+  if (!h.startsWith('#')) h = '#' + h;
+  var rgb = this.hexToRgb(h);
+  return this.rgbToHex(rgb.r, rgb.g, rgb.b);
+};
+
+Cal.prototype.buildCustomThemeVariables = function(hex, isDark) {
+  var base = this.normalizeCustomHex(hex);
+  if (isDark) {
+    var acc = this.blendHex(base, '#ffffff', 0.22);
+    var accLight = this.blendHex(base, '#ffffff', 0.55);
+    return {
+      '--bg-start': this.blendHex(base, '#0f172a', 0.86),
+      '--bg-end': this.blendHex(base, '#020617', 0.9),
+      '--surface': this.rgbaFromHex(this.blendHex(base, '#1e293b', 0.5), 0.82),
+      '--surface-soft': this.rgbaFromHex(this.blendHex(base, '#1e293b', 0.55), 0.62),
+      '--heading': accLight,
+      '--accent': this.blendHex(base, '#ffffff', 0.12),
+      '--accent-soft': this.rgbaFromHex(acc, 0.2),
+      '--accent-soft-2': this.rgbaFromHex(acc, 0.14),
+      '--accent-hover': this.rgbaFromHex(acc, 0.32),
+      '--accent-strong': this.blendHex(base, '#f1f5f9', 0.72),
+      '--outline': this.rgbaFromHex(acc, 0.38),
+      '--today-start': this.blendHex(base, '#ffffff', 0.28),
+      '--today-end': this.blendHex(base, '#ffffff', 0.08),
+      '--selected-bg': this.rgbaFromHex(acc, 0.16),
+      '--selected-shadow': this.rgbaFromHex(acc, 0.28),
+      '--input-border': this.rgbaFromHex(accLight, 0.4),
+      '--muted-cell': this.rgbaFromHex(accLight, 0.55)
+    };
+  }
+  return {
+    '--bg-start': this.blendHex(base, '#ffffff', 0.91),
+    '--bg-end': this.blendHex(base, '#fffef8', 0.87),
+    '--surface': this.blendHex(base, '#ffffff', 0.76),
+    '--surface-soft': this.blendHex(base, '#ffffff', 0.84),
+    '--heading': this.blendHex(base, '#1a1a1a', 0.62),
+    '--accent': base,
+    '--accent-soft': this.blendHex(base, '#ffffff', 0.62),
+    '--accent-soft-2': this.blendHex(base, '#ffffff', 0.72),
+    '--accent-hover': this.blendHex(base, '#ffffff', 0.42),
+    '--accent-strong': this.blendHex(base, '#0f172a', 0.48),
+    '--outline': this.rgbaFromHex(base, 0.22),
+    '--today-start': this.blendHex(base, '#ffffff', 0.28),
+    '--today-end': this.blendHex(base, '#000000', 0.12),
+    '--selected-bg': this.blendHex(base, '#ffffff', 0.78),
+    '--selected-shadow': this.rgbaFromHex(base, 0.2),
+    '--input-border': this.blendHex(base, '#ffffff', 0.48),
+    '--muted-cell': this.rgbaFromHex(base, 0.42)
+  };
+};
+
+Cal.prototype.clearCustomThemeInline = function() {
+  var self = this;
+  this.CUSTOM_THEME_CSS_VARS.forEach(function(key) {
+    document.body.style.removeProperty(key);
+  });
+};
+
+Cal.prototype.applyCustomThemeInline = function() {
+  this.clearCustomThemeInline();
+  if (this.settings.theme !== 'custom') return;
+  var hex = this.normalizeCustomHex(this.settings.customColor || '#7c3aed');
+  var vars = this.buildCustomThemeVariables(hex, this.settings.mode === 'dark');
+  var k;
+  for (k in vars) {
+    if (Object.prototype.hasOwnProperty.call(vars, k)) {
+      document.body.style.setProperty(k, vars[k]);
+    }
+  }
 };
 
 Cal.prototype.t = function(key) {
@@ -199,7 +406,23 @@ Cal.prototype.saveSettings = function() {
 
 Cal.prototype.applySettings = function() {
   document.body.setAttribute('data-theme', this.settings.theme);
+  document.body.setAttribute('data-mode', this.settings.mode === 'dark' ? 'dark' : 'light');
   document.documentElement.lang = this.settings.language;
+  this.clearCustomThemeInline();
+  if (this.settings.theme === 'custom') {
+    this.applyCustomThemeInline();
+  }
+  this.applyViewLayout();
+};
+
+Cal.prototype.applyViewLayout = function() {
+  var shell = document.querySelector('.app-shell');
+  if (!shell) return;
+  if ((this.settings.viewSpan || 'month') === 'month') {
+    shell.classList.remove('layout-compact');
+  } else {
+    shell.classList.add('layout-compact');
+  }
 };
 
 Cal.prototype.loadNotes = function() {
@@ -220,37 +443,294 @@ Cal.prototype.saveNotes = function() {
   }
 };
 
-Cal.prototype.nextMonth = function() {
-  if (this.currMonth === 11) {
-    this.currMonth = 0;
-    this.currYear++;
+Cal.prototype.addDays = function(y, m, d, delta) {
+  var dt = new Date(y, m, d + delta);
+  return { y: dt.getFullYear(), m: dt.getMonth(), d: dt.getDate() };
+};
+
+Cal.prototype.getWeekStart = function(y, m, d) {
+  var date = new Date(y, m, d);
+  var jsDow = date.getDay();
+  var delta;
+  if (this.settings.weekStart === 'USA') {
+    delta = jsDow;
   } else {
-    this.currMonth++;
+    delta = jsDow === 0 ? 6 : jsDow - 1;
   }
+  date.setDate(date.getDate() - delta);
+  return { y: date.getFullYear(), m: date.getMonth(), d: date.getDate() };
+};
+
+Cal.prototype.getWeekdayLabelForDate = function(y, m, d) {
+  var jsDay = new Date(y, m, d).getDay();
+  var lang = this.translations[this.settings.language];
+  if (this.settings.weekStart === 'USA') {
+    return lang.daysUSA[jsDay];
+  }
+  var euIdx = jsDay === 0 ? 6 : jsDay - 1;
+  return lang.daysEU[euIdx];
+};
+
+Cal.prototype.formatRangeTitle = function(start, end) {
+  var months = this.getMonths();
+  if (start.y === end.y && start.m === end.m) {
+    return months[start.m] + ' ' + start.d + ' – ' + end.d + ', ' + start.y;
+  }
+  if (start.y === end.y) {
+    return months[start.m] + ' ' + start.d + ' – ' + months[end.m] + ' ' + end.d + ', ' + start.y;
+  }
+  return months[start.m] + ' ' + start.d + ', ' + start.y + ' – ' + months[end.m] + ' ' + end.d + ', ' + end.y;
+};
+
+Cal.prototype.ensureRangeAnchor = function() {
+  var span = this.settings.viewSpan || 'month';
+  if (span === 'month') return;
+  var changed = false;
+  var t = new Date();
+  if (!this.settings.rangeAnchor || typeof this.settings.rangeAnchor.y !== 'number') {
+    this.settings.rangeAnchor = { y: t.getFullYear(), m: t.getMonth(), d: t.getDate() };
+    changed = true;
+  }
+  if (span === '7') {
+    var ws = this.getWeekStart(
+      this.settings.rangeAnchor.y,
+      this.settings.rangeAnchor.m,
+      this.settings.rangeAnchor.d
+    );
+    if (
+      ws.y !== this.settings.rangeAnchor.y ||
+      ws.m !== this.settings.rangeAnchor.m ||
+      ws.d !== this.settings.rangeAnchor.d
+    ) {
+      this.settings.rangeAnchor = ws;
+      changed = true;
+    }
+  }
+  if (changed) {
+    this.saveSettings();
+  }
+};
+
+Cal.prototype.navigateCalendar = function(direction) {
   this.hideNotesPanel();
+  var span = this.settings.viewSpan || 'month';
+  if (span === 'month') {
+    if (direction > 0) {
+      if (this.currMonth === 11) {
+        this.currMonth = 0;
+        this.currYear++;
+      } else {
+        this.currMonth++;
+      }
+    } else {
+      if (this.currMonth === 0) {
+        this.currMonth = 11;
+        this.currYear--;
+      } else {
+        this.currMonth--;
+      }
+    }
+  } else {
+    this.ensureRangeAnchor();
+    var a = this.settings.rangeAnchor;
+    var step = span === '7' ? 7 * direction : direction;
+    this.settings.rangeAnchor = this.addDays(a.y, a.m, a.d, step);
+    this.saveSettings();
+  }
   this.showcurr();
+};
+
+Cal.prototype.nextMonth = function() {
+  this.navigateCalendar(1);
 };
 
 Cal.prototype.previousMonth = function() {
-  if (this.currMonth === 0) {
-    this.currMonth = 11;
-    this.currYear--;
-  } else {
-    this.currMonth--;
+  this.navigateCalendar(-1);
+};
+
+Cal.prototype.showcurr = function() {
+  if ((this.settings.viewSpan || 'month') !== 'month') {
+    this.ensureRangeAnchor();
   }
+  this.updateHeaderUI();
+  var span = this.settings.viewSpan || 'month';
+  if (span === 'month') {
+    this.showMonth(this.currYear, this.currMonth);
+  } else {
+    this.showDayRange(span);
+  }
+  this.applyViewLayout();
+};
+
+Cal.prototype.getViewSpanOptions = function() {
+  return [
+    { value: '1', key: 'view1Day' },
+    { value: '3', key: 'view3Days' },
+    { value: '7', key: 'view7Days' },
+    { value: 'month', key: 'view1Month' }
+  ];
+};
+
+Cal.prototype.syncViewSpanThumb = function() {
+  var track = document.getElementById('viewSpanTrack');
+  var thumb = document.getElementById('viewSpanThumb');
+  if (!track || !thumb) return;
+  var span = this.settings.viewSpan || 'month';
+  var btn = track.querySelector('.view-span-btn[data-value="' + span + '"]');
+  if (!btn) {
+    btn = track.querySelector('.view-span-btn[data-value="month"]');
+  }
+  if (!btn) return;
+  var tr = track.getBoundingClientRect();
+  var br = btn.getBoundingClientRect();
+  thumb.style.width = Math.round(br.width) + 'px';
+  thumb.style.left = Math.round(br.left - tr.left) + 'px';
+  thumb.style.top = Math.round(br.top - tr.top) + 'px';
+  thumb.style.height = Math.round(br.height) + 'px';
+
+  track.querySelectorAll('.view-span-btn').forEach(function(b) {
+    var on = b.getAttribute('data-value') === span;
+    b.classList.toggle('is-selected', on);
+    b.setAttribute('aria-checked', on ? 'true' : 'false');
+  });
+};
+
+Cal.prototype.updateHeaderUI = function() {
+  var self = this;
+  getId('btnPrev').textContent = this.t('back');
+  getId('btnNext').textContent = this.t('next');
+  getId('btnSettings').setAttribute('aria-label', this.t('settings'));
+
+  var span = this.settings.viewSpan || 'month';
+  if (span === 'month') {
+    getId('btnPrev').setAttribute('aria-label', this.t('ariaNavMonthPrev'));
+    getId('btnNext').setAttribute('aria-label', this.t('ariaNavMonthNext'));
+  } else if (span === '1') {
+    getId('btnPrev').setAttribute('aria-label', this.t('ariaNavDayPrev'));
+    getId('btnNext').setAttribute('aria-label', this.t('ariaNavDayNext'));
+  } else if (span === '7') {
+    getId('btnPrev').setAttribute('aria-label', this.t('ariaNavWeekPrev'));
+    getId('btnNext').setAttribute('aria-label', this.t('ariaNavWeekNext'));
+  } else {
+    getId('btnPrev').setAttribute('aria-label', this.t('ariaNavRangePrev'));
+    getId('btnNext').setAttribute('aria-label', this.t('ariaNavRangeNext'));
+  }
+
+  var labelEl = document.getElementById('viewSpanLabel');
+  if (labelEl) {
+    labelEl.textContent = this.t('viewRange');
+  }
+
+  var track = document.getElementById('viewSpanTrack');
+  if (track) {
+    this.getViewSpanOptions().forEach(function(o) {
+      var b = track.querySelector('.view-span-btn[data-value="' + o.value + '"]');
+      if (b) {
+        b.textContent = self.t(o.key);
+      }
+    });
+  }
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      self.syncViewSpanThumb();
+    });
+  });
+};
+
+Cal.prototype.onViewSpanChange = function(value) {
+  var prev = this.settings.viewSpan || 'month';
+  var prevAnchor = this.settings.rangeAnchor;
+  this.settings.viewSpan = value;
+
+  if (value === 'month') {
+    var t = this.settings.rangeAnchor;
+    if (t && typeof t.y === 'number') {
+      this.currYear = t.y;
+      this.currMonth = t.m;
+    }
+  } else if (value === '3') {
+    var n3 = new Date();
+    this.settings.rangeAnchor = { y: n3.getFullYear(), m: n3.getMonth(), d: n3.getDate() };
+  } else if (value === '1') {
+    if (prev === 'month' && this.selectedDateKey) {
+      var p1 = this.selectedDateKey.split('-');
+      this.settings.rangeAnchor = {
+        y: Number(p1[0]),
+        m: Number(p1[1]) - 1,
+        d: Number(p1[2])
+      };
+    } else if (prevAnchor && typeof prevAnchor.y === 'number' && prev !== 'month') {
+      this.settings.rangeAnchor = { y: prevAnchor.y, m: prevAnchor.m, d: prevAnchor.d };
+    } else {
+      var n1 = new Date();
+      this.settings.rangeAnchor = { y: n1.getFullYear(), m: n1.getMonth(), d: n1.getDate() };
+    }
+  } else if (value === '7') {
+    if (prev === 'month' && this.selectedDateKey) {
+      var p7 = this.selectedDateKey.split('-');
+      this.settings.rangeAnchor = {
+        y: Number(p7[0]),
+        m: Number(p7[1]) - 1,
+        d: Number(p7[2])
+      };
+    } else if (prevAnchor && typeof prevAnchor.y === 'number' && prev !== 'month') {
+      this.settings.rangeAnchor = { y: prevAnchor.y, m: prevAnchor.m, d: prevAnchor.d };
+    } else {
+      var n7 = new Date();
+      this.settings.rangeAnchor = { y: n7.getFullYear(), m: n7.getMonth(), d: n7.getDate() };
+    }
+    this.settings.rangeAnchor = this.getWeekStart(
+      this.settings.rangeAnchor.y,
+      this.settings.rangeAnchor.m,
+      this.settings.rangeAnchor.d
+    );
+  }
+
+  this.saveSettings();
   this.hideNotesPanel();
   this.showcurr();
 };
 
-Cal.prototype.showcurr = function() {
-  this.updateHeaderButtons();
-  this.showMonth(this.currYear, this.currMonth);
-};
+Cal.prototype.showDayRange = function(span) {
+  var n = Number(span);
+  var a = this.settings.rangeAnchor;
+  var days = [];
+  var i;
+  for (i = 0; i < n; i++) {
+    days.push(this.addDays(a.y, a.m, a.d, i));
+  }
 
-Cal.prototype.updateHeaderButtons = function() {
-  getId('btnPrev').textContent = this.t('back');
-  getId('btnNext').textContent = this.t('next');
-  getId('btnSettings').setAttribute('aria-label', this.t('settings'));
+  var title = this.formatRangeTitle(days[0], days[days.length - 1]);
+  var html = '<table class="calendar-range cols-' + n + '">';
+
+  html += '<thead><tr>';
+  html += '<td colspan="' + n + '">' + title + '</td>';
+  html += '</tr></thead>';
+
+  html += '<tr class="days">';
+  for (i = 0; i < days.length; i++) {
+    var di = days[i];
+    html += '<td>' + this.getWeekdayLabelForDate(di.y, di.m, di.d) + '</td>';
+  }
+  html += '</tr>';
+
+  html += '<tr>';
+  var today = new Date();
+  for (i = 0; i < days.length; i++) {
+    var dk = days[i];
+    var isToday = today.getFullYear() === dk.y && today.getMonth() === dk.m && today.getDate() === dk.d;
+    var className = isToday ? 'today' : 'normal';
+    var dateKey = this.getDateKey(dk.y, dk.m, dk.d);
+    html += this.renderDayCell(dk.d, className, dateKey);
+  }
+  html += '</tr>';
+
+  html += '</table>';
+
+  document.getElementById(this.divId).innerHTML = html;
+  this.bindDayClicks();
+  this.restoreSelectedDay();
 };
 
 Cal.prototype.getDateKey = function(y, m, d) {
@@ -277,7 +757,7 @@ Cal.prototype.hasRealNotes = function(dateKey) {
 };
 
 Cal.prototype.isCustomColor = function(color) {
-  return ['red', 'orange', 'yellow', 'green', 'pink'].indexOf(color) === -1;
+  return ['red', 'orange', 'yellow', 'green'].indexOf(color) === -1;
 };
 
 Cal.prototype.getColorStyle = function(color) {
@@ -399,10 +879,16 @@ Cal.prototype.bindDayClicks = function() {
       self.selectedDateKey = dateKey;
 
       document.querySelectorAll('#' + self.divId + ' td.selected').forEach(function(el) {
-        el.classList.remove('selected');
+        el.classList.remove('selected', 'selected-day-glow');
       });
 
       this.classList.add('selected');
+
+      if (!this.classList.contains('today')) {
+        this.classList.remove('selected-day-glow');
+        void this.offsetWidth;
+        this.classList.add('selected-day-glow');
+      }
 
       if (self.hasRealNotes(dateKey)) {
         self.openDayNotesView(dateKey);
@@ -435,7 +921,7 @@ Cal.prototype.hideNotesPanel = function() {
   panel.classList.add('hidden');
 
   document.querySelectorAll('#' + this.divId + ' td.selected').forEach(function(el) {
-    el.classList.remove('selected');
+    el.classList.remove('selected', 'selected-day-glow');
   });
 };
 
@@ -475,13 +961,31 @@ Cal.prototype.renderSettingsView = function() {
   html += '<div class="notes-title">' + this.t('settings') + '</div>';
 
   html += '<div class="settings-section">';
+  html += '<div class="settings-section-title">' + this.t('mode') + '</div>';
+  html += '<div class="settings-options settings-options-mode">';
+  html += this.renderOptionButton('mode', 'light', '<span class="mode-icon" aria-hidden="true">☀️</span><span class="mode-text">' + this.t('dayMode') + '</span>', this.settings.mode !== 'dark', 'mode-btn');
+  html += this.renderOptionButton('mode', 'dark', '<span class="mode-icon" aria-hidden="true">🌙</span><span class="mode-text">' + this.t('nightMode') + '</span>', this.settings.mode === 'dark', 'mode-btn');
+  html += '</div>';
+  html += '</div>';
+
+  html += '<div class="settings-section">';
   html += '<div class="settings-section-title">' + this.t('themes') + '</div>';
-  html += '<div class="settings-options">';
-  html += this.renderOptionButton('theme', 'standard', this.t('standard'), this.settings.theme === 'standard');
-  html += this.renderOptionButton('theme', 'green', this.t('green'), this.settings.theme === 'green');
-  html += this.renderOptionButton('theme', 'red', this.t('red'), this.settings.theme === 'red');
-  html += this.renderOptionButton('theme', 'blue', this.t('blue'), this.settings.theme === 'blue');
-  html += this.renderOptionButton('theme', 'softpink', this.t('softpink'), this.settings.theme === 'softpink');
+  html += '<div class="settings-options settings-options-themes">';
+  html += this.renderOptionButton('theme', 'standard', this.t('themeStandard'), this.settings.theme === 'standard', '', 'standard');
+  html += this.renderOptionButton('theme', 'green', this.t('themeForest'), this.settings.theme === 'green', '', 'green');
+  html += this.renderOptionButton('theme', 'red', this.t('themeCherry'), this.settings.theme === 'red', '', 'red');
+  html += this.renderOptionButton('theme', 'blue', this.t('themeOcean'), this.settings.theme === 'blue', '', 'blue');
+  html += this.renderOptionButton('theme', 'softpink', this.t('themeSakura'), this.settings.theme === 'softpink', '', 'softpink');
+  html += this.renderOptionButton('theme', 'yellow', this.t('themeHoney'), this.settings.theme === 'yellow', '', 'yellow');
+  html += this.renderOptionButton('theme', 'custom', this.t('themeCustom'), this.settings.theme === 'custom', '', 'custom');
+  html += '</div>';
+  html += '<div class="custom-theme-panel' + (this.settings.theme === 'custom' ? '' : ' hidden') + '" id="customThemePanel">';
+  html += '<p class="custom-palette-hint">' + this.escapeHtml(this.t('customPaletteHint')) + '</p>';
+  html += '<div class="custom-palette-grid" id="customPaletteGrid"></div>';
+  html += '<label class="custom-palette-native">';
+  html += '<span>' + this.escapeHtml(this.t('customPickExact')) + '</span>';
+  html += '<input type="color" id="customThemeColorInput" value="' + this.escapeHtml(this.normalizeCustomHex(this.settings.customColor || '#7c3aed')) + '">';
+  html += '</label>';
   html += '</div>';
   html += '</div>';
 
@@ -505,12 +1009,59 @@ Cal.prototype.renderSettingsView = function() {
 
   content.innerHTML = html;
 
+  var grid = document.getElementById('customPaletteGrid');
+  if (grid) {
+    grid.innerHTML = self.BRIGHT_CUSTOM_SWATCHES.map(function(h) {
+      return (
+        '<button type="button" class="custom-palette-swatch" data-hex="' + self.escapeHtml(h) + '" ' +
+        'style="--swatch:' + self.escapeHtml(h) + '" title="' + self.escapeHtml(h) + '"></button>'
+      );
+    }).join('');
+  }
+
+  document.querySelectorAll('.custom-palette-swatch').forEach(function(sw) {
+    sw.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var hx = this.getAttribute('data-hex');
+      self.settings.theme = 'custom';
+      self.settings.customColor = hx;
+      self.saveSettings();
+      self.applySettings();
+      self.showcurr();
+      self.renderSettingsView();
+      var inp = document.getElementById('customThemeColorInput');
+      if (inp) inp.value = self.normalizeCustomHex(hx);
+    });
+  });
+
+  var colorInp = document.getElementById('customThemeColorInput');
+  if (colorInp) {
+    colorInp.addEventListener('input', function(e) {
+      e.stopPropagation();
+      self.settings.theme = 'custom';
+      self.settings.customColor = this.value;
+      self.saveSettings();
+      self.applySettings();
+      self.showcurr();
+    });
+  }
+
   document.querySelectorAll('.option-btn').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       e.stopPropagation();
       var type = this.dataset.type;
       var value = this.dataset.value;
       self.settings[type] = value;
+      if (type === 'theme' && value === 'custom' && !self.settings.customColor) {
+        self.settings.customColor = '#8b5cf6';
+      }
+      if (type === 'weekStart' && self.settings.viewSpan === '7' && self.settings.rangeAnchor) {
+        self.settings.rangeAnchor = self.getWeekStart(
+          self.settings.rangeAnchor.y,
+          self.settings.rangeAnchor.m,
+          self.settings.rangeAnchor.d
+        );
+      }
       self.saveSettings();
       self.applySettings();
       self.showcurr();
@@ -519,8 +1070,17 @@ Cal.prototype.renderSettingsView = function() {
   });
 };
 
-Cal.prototype.renderOptionButton = function(type, value, label, isActive) {
-  return '<button class="option-btn' + (isActive ? ' active-option' : '') + '" data-type="' + type + '" data-value="' + value + '">' + label + '</button>';
+Cal.prototype.renderOptionButton = function(type, value, label, isActive, extraClass, themeSwatch) {
+  var extra = extraClass ? (' ' + extraClass) : '';
+  var swCls = themeSwatch ? ' theme-swatch-btn' : '';
+  var swData = themeSwatch ? ' data-theme-swatch="' + themeSwatch + '"' : '';
+  var inner = themeSwatch
+    ? '<span class="theme-swatch-label">' + this.escapeHtml(String(label)) + '</span>'
+    : label;
+  return (
+    '<button type="button" class="option-btn' + extra + swCls + (isActive ? ' active-option' : '') + '" ' +
+    'data-type="' + type + '" data-value="' + value + '"' + swData + '>' + inner + '</button>'
+  );
 };
 
 Cal.prototype.renderDayNotesView = function(dateKey) {
@@ -605,7 +1165,7 @@ Cal.prototype.renderNotesEditor = function(dateKey) {
       html +=     '<input class="note-time" data-index="' + index + '" type="time" value="' + self.escapeHtml(note.time) + '">';
       html +=     '<div class="note-color-picker">';
       html +=       self.renderColorCircles(note.color, index);
-      html +=       '<input class="note-custom-color" data-index="' + index + '" type="color" value="' + self.normalizeColorForPicker(note.color) + '">';
+      html +=       self.renderNotePaletteInput(note.color, index);
       html +=     '</div>';
       html +=   '</div>';
       html += '</div>';
@@ -646,7 +1206,7 @@ Cal.prototype.normalizeColorForPicker = function(color) {
 };
 
 Cal.prototype.renderColorCircles = function(selectedColor, index) {
-  var colors = ['red', 'orange', 'yellow', 'green', 'pink'];
+  var colors = ['red', 'orange', 'yellow', 'green'];
 
   return colors.map(function(color) {
     var activeClass = color === selectedColor ? ' active-color' : '';
@@ -657,6 +1217,20 @@ Cal.prototype.renderColorCircles = function(selectedColor, index) {
       '</button>'
     );
   }).join('');
+};
+
+Cal.prototype.renderNotePaletteInput = function(noteColor, index) {
+  var isPaletteActive = this.isCustomColor(noteColor) || noteColor === 'pink';
+  var val = this.normalizeColorForPicker(noteColor);
+  var active = isPaletteActive ? ' note-palette-label--active' : '';
+  return (
+    '<label class="note-palette-label' + active + '">' +
+    '<input type="color" class="note-palette-input" data-index="' + index + '" value="' +
+    this.escapeHtml(val) + '" title="' + this.escapeHtml(this.t('pickCustomColor')) + '" aria-label="' +
+    this.escapeHtml(this.t('pickCustomColor')) + '">' +
+    '<span class="note-palette-face" aria-hidden="true"></span>' +
+    '</label>'
+  );
 };
 
 Cal.prototype.renderColorDotForList = function(color, className) {
@@ -704,7 +1278,7 @@ Cal.prototype.bindNoteInputs = function(dateKey) {
     });
   });
 
-  document.querySelectorAll('.note-custom-color').forEach(function(input) {
+  document.querySelectorAll('.note-palette-input').forEach(function(input) {
     input.addEventListener('input', function(e) {
       e.stopPropagation();
       var index = Number(this.dataset.index);
@@ -834,6 +1408,27 @@ Cal.prototype.escapeHtml = function(value) {
 window.onload = function() {
   var c = new Cal('divCal');
   c.showcurr();
+
+  var viewTrack = document.getElementById('viewSpanTrack');
+  if (viewTrack) {
+    viewTrack.querySelectorAll('.view-span-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        c.onViewSpanChange(this.getAttribute('data-value'));
+      });
+    });
+  }
+
+  window.addEventListener('resize', function() {
+    c.syncViewSpanThumb();
+  });
+
+  if (typeof ResizeObserver !== 'undefined' && viewTrack) {
+    var viewSpanRo = new ResizeObserver(function() {
+      c.syncViewSpanThumb();
+    });
+    viewSpanRo.observe(viewTrack);
+  }
 
   getId('btnNext').onclick = function(e) {
     e.stopPropagation();
